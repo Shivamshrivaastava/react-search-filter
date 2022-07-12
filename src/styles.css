@@ -1,0 +1,41 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+body {
+  background : red;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.user-list {
+  display: grid;
+  grid-gap: 1rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+   
+}
+
+input[type=search] {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
